@@ -1,0 +1,35 @@
+*{
+    margin: 0cm;
+    padding: 0%;
+    
+}
+@font-face {
+    font-family: 'digital';
+    src: url('fonte/digital\ display\ tfb.ttf') format('truetype');
+  }
+div{
+    border: 1px solid #000;
+}
+div.calc{
+    overflow: hidden;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+div.display{
+    width: 390px;
+    height: 50px;
+    overflow: hidden;
+    font-size:50px;
+    font-family: digital;
+    padding: 0;
+    padding-left: 10px;
+}
+
+div.limpar{
+    width: 100px;
+    height: 50px;
+}
