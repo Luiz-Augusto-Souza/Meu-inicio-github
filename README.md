@@ -1,2 +1,2 @@
 # Meu-inicio-github
- Projetos iniciais do github
+Estes são meus primeiros projetos para meu portifólio de desenvolvedor
