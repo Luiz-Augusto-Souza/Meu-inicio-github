@@ -1,35 +1,66 @@
-*{
-    margin: 0cm;
-    padding: 0%;
-    
-}
 @font-face {
-    font-family: 'digital';
+    font-family: 'display';
     src: url('fonte/digital\ display\ tfb.ttf') format('truetype');
   }
-div{
-    border: 1px solid #000;
-}
-div.calc{
-    overflow: hidden;
-    margin: 50px auto;
-    width: 500px;
-    height: 500px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-}
-div.display{
-    width: 390px;
-    height: 50px;
-    overflow: hidden;
-    font-size:50px;
-    font-family: digital;
+
+*{
+    margin: 0;
     padding: 0;
-    padding-left: 10px;
+    font-family: display;
+    letter-spacing: 2px;
 }
 
-div.limpar{
-    width: 100px;
+.fundo{
+    background-image: linear-gradient(45deg,rgb(255, 255, 255), rgb(20, 197, 220));
+    height: 100vh;
+}
+.calculadora{
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.8);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 15px;
+	box-shadow: 35px 45px 35px -15px #02020096;
+
+}
+.botao{
+    width: 50px;
     height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: hsla(0, 0%, 55%, 0.644);
+    border: none;
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    border-radius: 30%;
+}
+.botao:hover{
+    background-color:hsla(0, 0%, 50%, 0.644);
+}
+.botao:active{
+    background-color: hsla(0, 0%, 30%, 0.644);
+}
+   
+.colls2{
+    width: 106px;
+}
+.rows2{
+    height: 106px;
+}
+#resultado{
+    width: 207px;
+    height:60px;
+    background-color: hsl(0, 0%, 90%);
+    margin: 5px;
+    padding: 5px;
+    font-size: 50px;
+    color: #000;
+    text-align: right;
+    font-family: display;
+    overflow: hidden;
+    border-radius: 5px;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
 }
