@@ -69,18 +69,41 @@ span.titulo{
 form.container input{
     width: 90%;
     font-size: 1em;
-    padding: 5px;
-    border: 1px solid #ddd;    
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;  
+    transition:     scale 0.3s; 
 }
-form.container label{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.5em;
+form.container input:focus{
+    scale: 1.2;
+
 }
 
 form.container button{
 
-
+width: 30%;
+font-size: x-large;
+font-weight: 700;
+color: rgb(87, 146, 87);
+border-style: groove;
+border: 2px solid rgba(0, 128, 0, 0.5);
+border-radius: 40px;
+background-color: azure;
+transition: linear scale .1s,
+            linear box-shadow 0.3s ;
+cursor: pointer;
+box-shadow: 0px 0px 10px transparent;
     
 }
+form.container button:hover{
+    border: 2px solid rgba(0, 128, 0);
+    box-shadow: 5px 5px 10px #999;
+    scale: 1.05;
+}
 
+form.container button:active{
+    border: 2px solid rgba(0, 128, 0);
+    cursor: pointer;
+    scale: 1;
+    box-shadow: 0px 0px 10px transparent;
+}
