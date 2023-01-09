@@ -1,0 +1,65 @@
+/* Add a dark background color to the header */
+header {
+    background-color: #333;
+  }
+  
+  /* Style the header text */
+  header h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the navigation menu */
+  nav{
+    background-color: #ccc;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #111;
+  }
+  
+  /* Style the main content */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 600px) {
+    nav li {
+      display: block;
+      margin: 0;
+    }
+  
+    nav a {
+      display: block;
+      text-align: left;
+    }
+  }
+  
