@@ -1,65 +1,171 @@
-/* Add a dark background color to the header */
-header {
-    background-color: #333;
+:root{
+  --cor-primária:#2E2EF0;
+  --cor-secundaria:#A38600;
+  --cor-destaque:#F0CC2E;
+  --cor-texto-primaria:#000;
+  --cor-texto-secundaria:#555;
+  --cor-fundo:#f3f3f3;
+  --cor-preto:#000;
+  --cor-branco:#fff;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: var(--cor-texto-primaria);
+  font-family: Tahoma, sans-serif;
+  transition: color 0.3s,
+              background-color 0.3s;
+}
+body{
+  background-color: var(--cor-fundo);
+  padding-top: 5px;
+
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  padding-right: 50px;
+}
+
+header ul li *{
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  cursor: pointer;
+ 
+}
+header ul li:hover{
+  color:var(--cor-texto-secundaria);
+  background-color: #fefefe;
+}
+header ul li:not(:last-child){
+  border-right: #000 1px solid;
+
+}
+
+header .name *{
+cursor: pointer;
+}
+header .name {
+  position: fixed;
+  left:50px;
+  top: 10px;
+  
+}
+.name  b{
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1em;
+  display: block;
+}
+header .name::before{
+  content:''; 
+  z-index: -1;
+  position: absolute;
+  background-color: var(--cor-destaque);
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  left:-2em;
+  top:0;
+  
+  transition: all 0.3s ease-in-out;
+
+}
+header .name:hover::before{
+  border-radius: 10px 0;
+  width: 10em;
+  height: 2em;
+  left: -1em;
+}
+
+header .name span{
+  display: block;
+  font-weight: lighter;
+  font-size: 0.7em;
+  font-weight: 100;
+  color: var(--cor-texto-secundaria);
+}
+main{
+  max-width: 90vw;
+  height: 70vh;
+  margin: 30px auto 0 auto ;
+  box-shadow: 2px 4px 20px  0 #ccc;
+  position: relative;
+}
+input[type='radio']{
+  display: none;
+}
+.curriculo,.contato, .projetos, .home {
+  width: 100%;
+  min-height:100px;
+  border: #000 solid 1px;
+  transform: scale(0);
+  position: absolute;
+  }
+
+#p0:checked ~ .content .home{
+  transform: scale(1);
+}
+#p0:checked ~ .content .home{
+
+  transform: scale(1);
+}
+#p1:checked ~ .content .curriculo{
+  transform: scale(1);
+}
+
+#p2:checked ~ .content .projetos{
+  transform: scale(1);
+}
+
+#p3:checked ~ .content .contato{
+  transform: scale(1);
   }
   
-  /* Style the header text */
-  header h1 {
-    color: white;
-    font-size: 32px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Style the navigation menu */
-  nav{
-    background-color: #ccc;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-  }
-  
-  nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    background-color: #111;
-  }
-  
-  /* Style the main content */
-  main {
-    padding: 20px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Add responsive styles for smaller screens */
-  @media (max-width: 600px) {
-    nav li {
-      display: block;
-      margin: 0;
-    }
-  
-    nav a {
-      display: block;
-      text-align: left;
-    }
-  }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  border-top: #ccc 1px solid;
+  margin: 30px 5vw 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+footer .title{
+  display: block;
+  text-transform: capitalize;
+  font-weight:700 ;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+footer .text{
+  display: block;
+  font-weight: lighter;
+  font-size: 0.8em;
+
+}
